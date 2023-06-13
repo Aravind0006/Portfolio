@@ -1,0 +1,47 @@
+
+
+<div class="page">
+     <div class="calculator">
+          <div class="bar"> </div>
+
+          <input type="text" [value]="display" class="display">
+          <!--- style="width: 50px;height: 80px;color: black; font-family: 'Times New Roman', Times, serif;text-align:right;padding-left: 0px;font-size: 35px;" -->
+<br>
+
+          <div class="inputs">
+               <div class="row">
+                    <div id="7" class="input" (click)="PressOneByX()">¹/x</div>
+                    <div id="8" class="input" (click)="pressSquare()">x²</div>
+                    <div id="9" class="input" (click)="pressSroot()">²√x</div>
+                    <div id="/" class="operator" (click)="pressback()">&#9003;</div>
+               </div>
+               <div class="row">
+                    <div id="7" class="input" (click)="Press7()">7</div>
+                    <div id="8" class="input" (click)="Press8()">8</div>
+                    <div id="9" class="input" (click)="press9()">9</div>
+                    <div id="/" class="operator" (click)="pressDiv()">÷</div>
+               </div>
+               <div class="row">
+                    <div id="4" class="input" (click)="press4()">4</div>
+                    <div id="5" class="input" (click)="press5()">5</div>
+                    <div id="6" class="input" (click)="press6()">6</div>
+                    <div id="*" class="operator" (click)="pressMulti()">×</div>
+               </div>
+               <div class="row">
+                    <div id="1" class="input" (click)="press1()">1</div>
+                    <div id="2" class="input" (click)="press2()">2</div>
+                    <div id="3" class="input" (click)="press3()">3</div>
+                    <div id="-" class="operator" (click)="pressSub()">-</div>
+               </div>
+               <div class="row">
+                    <div id="reset" class="input" (click)="pressHalf()">⁺/₋</div>
+                    <div id="0" class="input" (click)="press0()">0</div>
+                    <div id="." class="input" (click)="Dot()">.</div>
+                    <div id="+" class="operator" (click)="PressPlus()">+</div>
+               </div>
+          </div>
+          <span> <button id="equals" (click)="Calculate()" class="equals">=</button> </span><span> <button id="equals" class="equals"
+                    (click)="pressC()">AC</button></span>
+     </div>
+</div>
+
